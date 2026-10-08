@@ -2,19 +2,19 @@
 
 ## Overview
 
-The current Digital Hub is a static, image-led portfolio built with browser-native HTML, CSS, and JavaScript. It requires no compilation, server-side code, database, or runtime dependency. This describes the current implementation, not a required stack for future changes. Any stack or backend is allowed when it best supports a clear, professional, scalable, maintainable solution.
+The Digital Hub uses Next.js App Router, React, TypeScript, and Tailwind CSS. This is the current stack choice, not a prohibition on other stacks or backends. Choose architecture based on product requirements and maintainability.
 
 ## Files and responsibilities
 
-- `index.html`: semantic page shell, metadata, and compact view controls.
-- `styles.css`: image-led gallery, responsive layout, and focus styling.
-- `content.js`: gallery and profile content exposed as `window.HUB_CONTENT`.
-- `script.js`: renders gallery cards and manages view navigation.
+- `src/app/`: route pages, root layout, metadata, and global styles.
+- `src/components/`: shared navigation frame and reusable portfolio image card.
+- `src/lib/portfolio.ts`: typed, source-controlled project and life gallery data.
+- `public/assets/images/`: local image assets served from the site root.
 
 ## Data flow
 
-The browser loads `content.js` before `script.js` using deferred scripts in document order. The renderer reads the `work` and `life` image-card arrays. Image paths resolve under `assets/images/`; when an expected file is absent, a clearly marked visual slot appears. The two view controls switch between the gallery and profile without a page reload. Content is trusted, source-controlled data.
+Next.js maps `/` to the visual gallery and `/about` to the profile view. Both routes use the shared site frame and typed card component. Images are served from `public/assets/images/` and rendered with `next/image`. Gallery data is local TypeScript; there is currently no database or backend API.
 
 ## Boundaries and decisions
 
-There is no persistence or network data flow beyond the optional Google Fonts stylesheet request. Content is maintained in source control. Project and resource entries must be verified before publication. Card markup currently uses HTML string templates, so content must remain trusted repository-authored data; do not pass untrusted values to the templates.
+Content and images are maintained in source control. Project and resource entries must be verified before publication. The App Router permits server-rendered features and route handlers if future requirements call for them. Do not introduce persistence or external services without a defined use case.

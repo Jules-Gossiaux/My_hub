@@ -2,28 +2,27 @@
 
 ## Requirements
 
+- Node.js 20.9 or newer and npm.
 - Git for version control.
 - A modern browser.
-- Python 3 (optional, for a local HTTP server).
-
-The current implementation has no package or build tools. This is an implementation detail, not a project constraint; if the stack changes, update these requirements and commands to match.
 
 ## Start locally
 
-Open `index.html` directly, or from the project directory run:
+From the project directory run:
 
 ```powershell
-python -m http.server 8000
+npm install
+npm run dev
 ```
 
-Visit `http://localhost:8000` and stop the server with Ctrl+C.
+Visit `http://localhost:3000`. Stop the server with Ctrl+C.
 
 ## Edit content
 
-Add verified gallery items in `content.js` and put their images under `assets/images/`. The expected file paths are documented in `assets/images/README.md`. Keep descriptive text short and factual. The site has no environment variables.
+Add verified gallery items in `src/lib/portfolio.ts` and put owner-approved images under `public/assets/images/`. Expected filenames and privacy notes are in `public/assets/images/README.md`. Set each image's public URL in the typed content entry. Keep descriptive text short and factual. No environment variables are currently required.
 
 ## Troubleshooting
 
 - If styles or scripts do not update, reload the page without cache.
-- Image slots display a visual placeholder when their expected files are absent.
-- If an image does not appear, check that its filename and file type match `content.js`.
+- Image cards display a visual placeholder until an `image` path is set in the content data.
+- Local assets in Next.js `public/` are referenced from the site root, for example `public/assets/images/profile/jules-portrait.webp` is `/assets/images/profile/jules-portrait.webp` in code.

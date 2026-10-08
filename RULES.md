@@ -8,7 +8,7 @@ These rules apply to contributors and automated agents working in this repositor
 2. Do not invent Jules's history, skills, interests, accomplishments, testimonials, or qualifications.
 3. Keep unfilled profile content clearly marked as editable placeholder copy.
 4. Do not list a project or resource until its title, description, and destination are real and approved for sharing.
-5. Keep gallery and profile content in the project's clear, maintainable source of truth (currently `content.js`).
+5. Keep gallery and profile content in the project's clear, maintainable source of truth (currently `src/lib/portfolio.ts`).
 6. Do not add features or infrastructure without a clear product or engineering reason; backend, database, analytics, or other services are permitted when justified.
 7. Keep project descriptions factual and concise.
 8. Keep humor brief and outside factual descriptions.

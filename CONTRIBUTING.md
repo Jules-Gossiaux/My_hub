@@ -4,7 +4,7 @@
 
 1. Review the PRD, `RULES.md`, and current Git status.
 2. Create a dedicated branch for the change; do not work directly on `main`.
-3. Keep changes focused. Choose a stack suited to the requirements and repository; do not treat the current static implementation as a constraint on future work.
+3. Keep changes focused and choose a stack that supports professional, clear, scalable, maintainable implementation. No framework or backend is prohibited in advance.
 4. Update documentation when setup or behavior changes.
 5. Inspect the diff and run the checks relevant to the change.
 6. Use a Conventional Commit message when committing.
@@ -12,7 +12,7 @@
 
 ## Content contributions
 
-Only add verified projects, student resources, contact details, and profile facts. Place gallery content in `content.js` and owner-approved images in the matching `assets/images/` folders. Do not publish personal imagery or contact details unless Jules intends them to be public.
+Only add verified projects, student resources, contact details, and profile facts. Place typed gallery content in `src/lib/portfolio.ts` and owner-approved images in the matching `public/assets/images/` folders. Do not publish personal imagery or contact details unless Jules intends them to be public.
 
 ## Documentation
 
@@ -20,4 +20,4 @@ Project-wide setup and product documents live at the repository root. Architectu
 
 ## Quality checks
 
-The project currently has no package manager, linter, or automated test suite. Check JavaScript syntax with `node --check script.js` and `node --check content.js`. Open the page in a browser at desktop and mobile widths and exercise the navigation with a keyboard.
+Run `npm run lint`, `npm run typecheck`, and `npm run build` before opening a pull request. Check both routes in a browser at desktop and mobile widths and exercise navigation with a keyboard.

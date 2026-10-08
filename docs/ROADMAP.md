@@ -3,7 +3,7 @@
 ## Current state
 
 - A compact image-led gallery and profile view replace the long scrolling landing page.
-- Gallery items load from `content.js` and point to files under `assets/images/`.
+- Typed gallery items live in `src/lib/portfolio.ts` and images belong under `public/assets/images/`.
 - Visual image slots appear until owner-supplied photos and project screenshots are added.
 - Personal profile copy reflects supplied details; project links, resources, and contact details still need real content.
 

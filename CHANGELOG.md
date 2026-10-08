@@ -8,3 +8,4 @@
 - Personalize the introduction and profile with Jules's rugby, reading, programming, and outdoors details.
 - Replace the scrolling landing page with a two-view, image-led portfolio gallery.
 - Add organized folders and filename guidance for owner-provided images.
+- Migrate the portfolio to Next.js App Router, React, TypeScript, and Tailwind CSS with lint, type-check, and production-build scripts.

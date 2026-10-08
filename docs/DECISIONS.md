@@ -2,6 +2,8 @@
 
 ## 2026-10-08 — Start with a static browser-native site
 
+**Status:** Superseded by the Next.js stack decision below.
+
 **Context:** The repository had only a PRD and no framework or existing application code. The product is a single-page personal hub with no backend requirement.
 
 **Decision:** The initial implementation uses plain HTML, CSS, and JavaScript with no package or build system. This is a reversible implementation choice, not a stack mandate; later work may use any suitable stack.
@@ -12,7 +14,7 @@
 
 **Context:** The portfolio should grow without redesigning its visual layout, while real project and resource details were not present in the repository.
 
-**Decision:** Store gallery items in `content.js` and load owner-provided images from the documented `assets/images/` paths.
+**Decision:** The initial static implementation stored gallery items in `content.js`. The current implementation stores typed items in `src/lib/portfolio.ts` and uses local files from `public/assets/images/`.
 
 **Consequences:** New entries can use the existing image cards. Only verified items and approved images should be added; the current renderer is intended for trusted source-controlled content.
 
@@ -28,6 +30,14 @@
 
 **Context:** The owner prefers a visual portfolio that uses the available screen area, with little text and no scrolling where practical. Personal, project, and experience photos will be supplied by the owner.
 
-**Decision:** Replace the scrolling landing page with compact gallery views and use owner-provided images from `assets/images/`.
+**Decision:** Replace the scrolling landing page with compact gallery views and use owner-provided images from `public/assets/images/`.
 
 **Consequences:** Desktop views can fit within the viewport. Small screens may scroll when needed for readable content. The GitHub repository is public, so committed images are publicly accessible.
+
+## 2026-10-08 — Use Next.js, TypeScript, and Tailwind CSS
+
+**Context:** The owner requested a more capable, professional stack while keeping the portfolio compact and easy to extend.
+
+**Decision:** Use Next.js App Router with TypeScript, React, Tailwind CSS, and Next Image. Keep content typed and local for now; add backend services only when product needs justify them.
+
+**Consequences:** The app has explicit routes, reusable typed components, a lint/type/build workflow, and image optimization. Compared with the original static files, it adds dependencies and a build step.
