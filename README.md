@@ -14,7 +14,7 @@ Then open `http://localhost:8000`.
 
 ## Update the content
 
-Edit `content.js` to add projects and resources. Each item may have `title`, `description`, `tag`, and `url` fields. Keep the arrays empty until there are real items ready to share; the page will show an honest empty state. Update the clearly marked personal copy in `index.html` with verified interests and contact information. No CV or contact address is currently included.
+Edit `content.js` to add projects and resources. Each item may have `title`, `description`, `tag`, and `url` fields. Keep the arrays empty until there are real items ready to share; the page will show an honest empty state. Update the contact placeholder in `index.html` only when Jules supplies a contact method. No CV or contact address is currently included.
 
 ## Project files
 

@@ -9,11 +9,10 @@
 
 ## Next
 
-1. Supply verified interests and a short profile.
-2. Add real project entries and destinations.
-3. Add real student resources and their intended audience.
-4. Choose and add an approved contact method.
-5. Review the finished page in target browsers and decide whether a custom domain is needed.
+1. Add real project entries and destinations.
+2. Add real student resources and their intended audience.
+3. Choose and add an approved contact method.
+4. Review the finished page in target browsers and decide whether a custom domain is needed.
 
 ## Out of scope unless requested
 
