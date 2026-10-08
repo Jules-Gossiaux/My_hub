@@ -1,6 +1,6 @@
 # Jules Gossiaux Digital Hub
 
-A lightweight personal portfolio and student resource hub. The site is built with plain HTML, CSS, and JavaScript and has no build step or runtime dependencies.
+A personal portfolio and student resource hub. The current implementation uses plain HTML, CSS, and JavaScript with no build step or runtime dependencies. The project is not tied to this stack; future work may choose any stack that fits the requirements and repository context.
 
 ## Run locally
 
@@ -22,6 +22,7 @@ Edit `content.js` to add projects and resources. Each item may have `title`, `de
 - `styles.css` contains responsive styles, focus states, and reduced-motion handling.
 - `content.js` is the source for project and student resource cards.
 - `script.js` renders cards and validates link protocols.
+- `docs/` contains architecture, development, testing, roadmap, and decision notes.
 
 ## Limits
 

@@ -4,7 +4,7 @@
 
 1. Review the PRD, `RULES.md`, and current Git status.
 2. Create a dedicated branch for the change; do not work directly on `main`.
-3. Keep changes focused and preserve the existing lightweight stack.
+3. Keep changes focused. Choose a stack suited to the requirements and repository; do not treat the current static implementation as a constraint on future work.
 4. Update documentation when setup or behavior changes.
 5. Inspect the diff and run the checks relevant to the change.
 6. Use a Conventional Commit message when committing.
@@ -13,6 +13,10 @@
 ## Content contributions
 
 Only add verified projects, student resources, contact details, and profile facts. Place project/resource entries in `content.js`; update profile copy in `index.html`. Do not publish private contact details without Jules's approval.
+
+## Documentation
+
+Project-wide setup and product documents live at the repository root. Architecture, development, testing, roadmap, and decision documents live in `docs/`.
 
 ## Quality checks
 

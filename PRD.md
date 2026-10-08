@@ -132,12 +132,13 @@ A clean, modern personal studio or digital workshop: organised and professional 
 ## 10. Technical implementation instructions for Codex
 
 1. Inspect the existing repository, identify its framework, scripts, styling conventions, and current page structure before editing.
-2. Work within the existing stack and established patterns. Do not replace the framework or introduce a new build system for this page.
-3. Implement the site in the smallest coherent set of files. Keep project/resource content easy to update.
-4. Reuse existing assets and dependencies when suitable. Add a dependency only when it is clearly needed.
-5. Do not fabricate personal facts, URLs, project status, student resources, contact details, or CV files. Use clearly marked content placeholders for information that must be supplied later.
-6. Run the relevant existing checks/build. Fix issues caused by the implementation and report any checks that could not be run.
-7. Do not publish or deploy the site unless explicitly instructed.
+2. Choose any stack that fits the product requirements, the repository context, and likely maintenance needs. There is no required language or framework.
+3. If an established stack exists, preserve it unless a concrete product or technical reason justifies changing it. If the repository has no implementation yet, select and document a suitable stack.
+4. Implement the site in the smallest coherent set of files. Keep project/resource content easy to update.
+5. Reuse suitable assets and dependencies. Add dependencies when they solve a real need and are compatible with the chosen stack.
+6. Do not fabricate personal facts, URLs, project status, student resources, contact details, or CV files. Use clearly marked content placeholders for information that must be supplied later.
+7. Run the relevant checks/build. Fix issues caused by the implementation and report any checks that could not be run.
+8. Do not publish or deploy the site unless explicitly instructed.
 
 ## 11. Acceptance criteria
 

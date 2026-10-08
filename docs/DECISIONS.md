@@ -1,10 +1,10 @@
 # Decisions
 
-## 2026-10-08 — Use a static browser-native site
+## 2026-10-08 — Start with a static browser-native site
 
 **Context:** The repository had only a PRD and no framework or existing application code. The product is a single-page personal hub with no backend requirement.
 
-**Decision:** Use plain HTML, CSS, and JavaScript with no package or build system.
+**Decision:** The initial implementation uses plain HTML, CSS, and JavaScript with no package or build system. This is a reversible implementation choice, not a stack mandate; later work may use any suitable stack.
 
 **Consequences:** The page is easy to host as static files and has few moving parts. Content updates require editing source files. There is no form handling, persistence, or server-side validation.
 

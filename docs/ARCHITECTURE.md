@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Digital Hub is a static, single-page site built with browser-native HTML, CSS, and JavaScript. It requires no compilation, server-side code, database, or runtime dependency.
+The current Digital Hub is a static, single-page site built with browser-native HTML, CSS, and JavaScript. It requires no compilation, server-side code, database, or runtime dependency. This describes the current implementation, not a required stack for future changes. Choose a stack based on product needs and repository context.
 
 ## Files and responsibilities
 

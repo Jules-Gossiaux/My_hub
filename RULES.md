@@ -17,20 +17,21 @@ These rules apply to contributors and automated agents working in this repositor
 
 ## Technical approach
 
-11. Preserve the plain HTML, CSS, and JavaScript architecture unless a concrete requirement justifies a change.
-12. Do not add a dependency for functionality that the browser already provides.
-13. Keep page content in semantic HTML and generated card content in `script.js`.
-14. Keep project and resource data separate from layout and presentation.
-15. Use readable, explicit code over speculative abstractions.
-16. Do not silently suppress errors that affect rendering or navigation.
-17. Validate external card URLs and allow only HTTP and HTTPS protocols.
-18. Open external destinations with `noopener noreferrer`.
-19. Do not put secrets, tokens, or private user data in the repository.
-20. Do not add remote services unless the product owner requests them.
-21. Prefer local CSS and existing assets over stock imagery.
-22. Keep dependencies, scripts, and build steps documented when introduced.
-23. Avoid generated content that implies unverified metrics or activity.
-24. Keep source files easy to edit without requiring a build system.
+11. Choose the stack that best fits the product requirements, existing repository, deployment constraints, and maintenance needs; no language or framework is mandated.
+12. When a repository already has an established stack, work with it unless a concrete requirement justifies a migration.
+13. Add dependencies and build tools when they solve a real product or engineering need; assess maintenance, compatibility, and license first.
+14. Keep page content in the appropriate semantic components or templates for the chosen stack.
+15. Keep project and resource data separate from layout and presentation where practical.
+16. Use readable, explicit code over speculative abstractions.
+17. Do not silently suppress errors that affect rendering or navigation.
+18. Validate external card URLs and allow only HTTP and HTTPS protocols.
+19. Open external destinations with `noopener noreferrer`.
+20. Do not put secrets, tokens, or private user data in the repository.
+21. Do not add remote services unless the product owner requests them.
+22. Prefer existing assets and purpose-built visuals over stock imagery.
+23. Keep dependencies, scripts, and build steps documented when introduced.
+24. Avoid generated content that implies unverified metrics or activity.
+25. Keep source files easy to edit and the development workflow documented.
 
 ## Accessibility and experience
 

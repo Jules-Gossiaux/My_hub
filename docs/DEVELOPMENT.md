@@ -6,7 +6,7 @@
 - A modern browser.
 - Python 3 (optional, for a local HTTP server).
 
-No Node packages or build tools are required. Node may be used for syntax checks.
+The current implementation has no package or build tools. This is an implementation detail, not a project constraint; if the stack changes, update these requirements and commands to match.
 
 ## Start locally
 
