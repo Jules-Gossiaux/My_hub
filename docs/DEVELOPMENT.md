@@ -20,11 +20,10 @@ Visit `http://localhost:8000` and stop the server with Ctrl+C.
 
 ## Edit content
 
-Add verified project and resource objects in `content.js`. Edit the introductory, about, and contact placeholders in `index.html` only when the owner supplies accurate content. The site has no environment variables.
+Add verified gallery items in `content.js` and put their images under `assets/images/`. The expected file paths are documented in `assets/images/README.md`. Keep descriptive text short and factual. The site has no environment variables.
 
 ## Troubleshooting
 
 - If styles or scripts do not update, reload the page without cache.
-- Google Fonts require network access; local system font fallbacks are defined.
-- If a card link is missing, ensure its URL uses HTTP or HTTPS.
-- An empty projects or resources list intentionally displays an empty state.
+- Image slots display a visual placeholder when their expected files are absent.
+- If an image does not appear, check that its filename and file type match `content.js`.

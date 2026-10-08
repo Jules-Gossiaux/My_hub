@@ -7,7 +7,7 @@
 
 ## 1. Product summary
 
-Build a personal website that acts as a clear home base for Jules Gossiaux's work. It should combine the introductory feel of a landing page, the evidence of a portfolio, the useful background of a CV, and a browsable collection of learning resources.
+Build a visual personal portfolio for Jules Gossiaux: a compact, image-led home for his projects, websites, rugby, experiences, and student resources. The portfolio should use the available screen area and avoid scrolling on common desktop sizes; a second compact view is acceptable for profile details.
 
 The site should make it easy to answer three questions:
 
@@ -17,21 +17,22 @@ The site should make it easy to answer three questions:
 
 The experience should feel personal and fun without making the work itself seem casual or unfinished. Use small moments of humour and personality around the content; keep project descriptions, skills, and contact information direct and professional.
 
-**Concept in one line:** A playful front door to serious work.
+**Concept in one line:** A compact visual record of work, sport, and life.
 
 ## 2. Goals
 
-- Introduce Jules and his interests in a concise, memorable way.
+- Introduce Jules through a small amount of distinctive copy and strong personal imagery.
 - Give visitors a clear route to projects, websites, and educational resources.
 - Present work in a way that is easy to scan and understand.
 - Leave room for the portfolio to grow as new projects are completed.
 - Work well on phones, tablets, and desktop screens.
+- Use the full desktop viewport for the portfolio, with no vertical scrolling when practical.
 - Make content easy to edit without requiring a redesign for every new item.
 
 ## 3. Non-goals
 
 - Do not build a full blog, social network, learning platform, or account system.
-- Do not add a backend, database, analytics, or newsletter signup unless the existing repository already requires one.
+- Do not add backend services, databases, analytics, or newsletters without a clear product or technical reason. These are allowed when they solve a real need; no architecture is prohibited in advance.
 - Do not invent achievements, experience, testimonials, project details, contact information, or downloadable CV files.
 - Do not make the site feel like a generic corporate template or a joke site.
 
@@ -51,7 +52,7 @@ They quickly assess Jules's interests and work, find background information, and
 
 ## 5. Information architecture
 
-Create a single-page site with a compact navigation that links to these sections:
+Create one or two compact views with simple navigation. Use an image-led portfolio grid rather than a long scrolling landing page. Avoid vertical scrolling on common desktop sizes; adapt responsibly on small screens where viewport space is limited. Use owner-supplied images of Jules, his work, sites, sport, and experiences; do not substitute stock or invented personal imagery.
 
 1. **Home / introduction**
    - Name and concise headline.
@@ -110,7 +111,7 @@ A clean, modern personal studio or digital workshop: organised and professional 
 
 ## 8. Functional requirements
 
-- Navigation links scroll to the correct sections and work with keyboard input.
+- View controls switch to the correct gallery/profile view and work with keyboard input.
 - Project and resource cards are rendered from one easy-to-edit data source when practical.
 - External links are visibly identifiable and open safely.
 - The layout adapts to small screens without horizontal overflow.
@@ -132,8 +133,8 @@ A clean, modern personal studio or digital workshop: organised and professional 
 ## 10. Technical implementation instructions for Codex
 
 1. Inspect the existing repository, identify its framework, scripts, styling conventions, and current page structure before editing.
-2. Choose any stack that fits the product requirements, the repository context, and likely maintenance needs. There is no required language or framework.
-3. If an established stack exists, preserve it unless a concrete product or technical reason justifies changing it. If the repository has no implementation yet, select and document a suitable stack.
+2. Choose any stack or architecture that best fits the product requirements and supports clear, professional, scalable, maintainable implementation. No language, framework, backend, or hosting approach is prohibited in advance.
+3. An existing stack is useful context, not a binding constraint; change it when a well-explained product or engineering reason supports the change.
 4. Implement the site in the smallest coherent set of files. Keep project/resource content easy to update.
 5. Reuse suitable assets and dependencies. Add dependencies when they solve a real need and are compatible with the chosen stack.
 6. Do not fabricate personal facts, URLs, project status, student resources, contact details, or CV files. Use clearly marked content placeholders for information that must be supplied later.

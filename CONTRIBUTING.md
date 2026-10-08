@@ -12,7 +12,7 @@
 
 ## Content contributions
 
-Only add verified projects, student resources, contact details, and profile facts. Place project/resource entries in `content.js`; update profile copy in `index.html`. Do not publish private contact details without Jules's approval.
+Only add verified projects, student resources, contact details, and profile facts. Place gallery content in `content.js` and owner-approved images in the matching `assets/images/` folders. Do not publish personal imagery or contact details unless Jules intends them to be public.
 
 ## Documentation
 

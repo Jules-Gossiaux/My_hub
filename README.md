@@ -14,14 +14,14 @@ Then open `http://localhost:8000`.
 
 ## Update the content
 
-Edit `content.js` to add projects and resources. Each item may have `title`, `description`, `tag`, and `url` fields. Keep the arrays empty until there are real items ready to share; the page will show an honest empty state. Update the contact placeholder in `index.html` only when Jules supplies a contact method. No CV or contact address is currently included.
+Add photographs and project screenshots to `assets/images/`, in the matching `profile/`, `projects/`, `sites/`, `experiences/`, or `resources/` subfolder. The image guide there lists the expected filenames. The gallery loads files at those paths automatically. Contact details and a CV are not included yet.
 
 ## Project files
 
-- `index.html` contains the page structure and editable profile copy.
-- `styles.css` contains responsive styles, focus states, and reduced-motion handling.
-- `content.js` is the source for project and student resource cards.
-- `script.js` renders cards and validates link protocols.
+- `index.html` contains the page shell and metadata.
+- `styles.css` contains the full-screen gallery layout, responsive behavior, and focus states.
+- `content.js` is the source for gallery items and profile facts.
+- `script.js` renders gallery cards and switches between compact views.
 - `docs/` contains architecture, development, testing, roadmap, and decision notes.
 
 ## Limits

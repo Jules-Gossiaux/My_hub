@@ -2,18 +2,18 @@
 
 ## Overview
 
-The current Digital Hub is a static, single-page site built with browser-native HTML, CSS, and JavaScript. It requires no compilation, server-side code, database, or runtime dependency. This describes the current implementation, not a required stack for future changes. Choose a stack based on product needs and repository context.
+The current Digital Hub is a static, image-led portfolio built with browser-native HTML, CSS, and JavaScript. It requires no compilation, server-side code, database, or runtime dependency. This describes the current implementation, not a required stack for future changes. Any stack or backend is allowed when it best supports a clear, professional, scalable, maintainable solution.
 
 ## Files and responsibilities
 
-- `index.html`: semantic page structure, metadata, navigation, and editable profile copy.
-- `styles.css`: visual system, responsive layout, focus styling, and reduced-motion behavior.
-- `content.js`: project and student-resource arrays exposed as `window.HUB_CONTENT`.
-- `script.js`: renders card collections and validates destination URL protocols.
+- `index.html`: semantic page shell, metadata, and compact view controls.
+- `styles.css`: image-led gallery, responsive layout, and focus styling.
+- `content.js`: gallery and profile content exposed as `window.HUB_CONTENT`.
+- `script.js`: renders gallery cards and manages view navigation.
 
 ## Data flow
 
-The browser loads `content.js` before `script.js` using deferred scripts in document order. The renderer reads the two arrays and fills the project and resource containers. An empty array produces an explicit empty state. A non-empty item may include `title`, `description`, `tag`, and `url`; the URL is parsed and only HTTP and HTTPS schemes create links. External links include `noopener noreferrer`.
+The browser loads `content.js` before `script.js` using deferred scripts in document order. The renderer reads the `work` and `life` image-card arrays. Image paths resolve under `assets/images/`; when an expected file is absent, a clearly marked visual slot appears. The two view controls switch between the gallery and profile without a page reload. Content is trusted, source-controlled data.
 
 ## Boundaries and decisions
 

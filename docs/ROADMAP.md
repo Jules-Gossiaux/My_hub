@@ -2,18 +2,18 @@
 
 ## Current state
 
-- Responsive single-page introduction, projects, student resources, about, and contact sections are implemented.
-- Project/resource card content is data-driven from `content.js`.
-- Empty states appear until real entries are supplied.
-- Personal interests, profile specifics, and contact details remain placeholders.
+- A compact image-led gallery and profile view replace the long scrolling landing page.
+- Gallery items load from `content.js` and point to files under `assets/images/`.
+- Visual image slots appear until owner-supplied photos and project screenshots are added.
+- Personal profile copy reflects supplied details; project links, resources, and contact details still need real content.
 
 ## Next
 
-1. Add real project entries and destinations.
-2. Add real student resources and their intended audience.
+1. Add and select the images for the gallery.
+2. Add project/site titles, destinations, and student resources where appropriate.
 3. Choose and add an approved contact method.
-4. Review the finished page in target browsers and decide whether a custom domain is needed.
+4. Review desktop and mobile layouts with real images; decide whether a custom domain is needed.
 
-## Out of scope unless requested
+## Not currently required (available if justified)
 
-Accounts, backend services, database, analytics, newsletter, blog, contact form, and deployment.
+Accounts, backend services, database, analytics, newsletter, blog, contact form, and deployment are not part of the current requirements. They are valid options if a real product need emerges.

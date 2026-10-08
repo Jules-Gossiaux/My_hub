@@ -8,18 +8,26 @@
 
 **Consequences:** The page is easy to host as static files and has few moving parts. Content updates require editing source files. There is no form handling, persistence, or server-side validation.
 
-## 2026-10-08 — Keep projects and resources as editable arrays
+## 2026-10-08 — Keep gallery content in one editable source
 
-**Context:** The page must grow without redesigning its layout, while real project and resource details were not present in the repository.
+**Context:** The portfolio should grow without redesigning its visual layout, while real project and resource details were not present in the repository.
 
-**Decision:** Store both collections in `content.js` and render clear empty states while the arrays are empty.
+**Decision:** Store gallery items in `content.js` and load owner-provided images from the documented `assets/images/` paths.
 
-**Consequences:** New entries can use the existing card layout. Only verified items should be added; the current renderer is intended for trusted source-controlled content.
+**Consequences:** New entries can use the existing image cards. Only verified items and approved images should be added; the current renderer is intended for trusted source-controlled content.
 
-## 2026-10-08 — Leave personal facts as placeholders
+## 2026-10-08 — Do not invent portfolio items or contact details
 
-**Context:** The PRD forbids invented personal details, and the repository did not provide interests, contact information, CV, or project facts.
+**Context:** The PRD forbids invented project details, and no real project links, student resources, CV, or contact method were present in the repository.
 
-**Decision:** Mark missing details as editable placeholders and omit CV and contact links.
+**Decision:** Show neutral image slots until images are provided; omit unverified projects, CV, and contact links.
 
-**Consequences:** The site structure is complete, but the owner should replace placeholders before presenting the page as a finished profile.
+**Consequences:** The visual structure can be reviewed before the portfolio is filled with real work.
+
+## 2026-10-08 — Make the portfolio image-led and compact
+
+**Context:** The owner prefers a visual portfolio that uses the available screen area, with little text and no scrolling where practical. Personal, project, and experience photos will be supplied by the owner.
+
+**Decision:** Replace the scrolling landing page with compact gallery views and use owner-provided images from `assets/images/`.
+
+**Consequences:** Desktop views can fit within the viewport. Small screens may scroll when needed for readable content. The GitHub repository is public, so committed images are publicly accessible.
